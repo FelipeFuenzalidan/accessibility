@@ -1,0 +1,343 @@
+[
+    {
+        "description": "Ensures role attribute has an appropriate value for the element",
+        "help": "ARIA role must be appropriate for the element",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI",
+        "id": "aria-allowed-role",
+        "impact": "minor",
+        "nodes": [
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": [
+                            "combobox"
+                        ],
+                        "id": "aria-allowed-role",
+                        "impact": "minor",
+                        "message": "role combobox  is not allowed for given element",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  role combobox  is not allowed for given element",
+                "html": "<input class=\"gLFyf gsfi\" maxlength=\"2048\" name=\"q\" type=\"text\" jsaction=\"paste:puy29d\" aria-autocomplete=\"both\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" autofocus=\"\" role=\"combobox\" spellcheck=\"false\" title=\"Buscar\" value=\"\" aria-label=\"Buscar\" data-ved=\"0ahUKEwiXm8iM64jnAhWTIbkGHV2ED5kQ39UDCAQ\">",
+                "impact": "minor",
+                "none": [],
+                "target": [
+                    ".gLFyf"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.aria",
+            "best-practice"
+        ]
+    },
+    {
+        "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+        "help": "Required ARIA attributes must be provided",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/aria-required-attr?application=axeAPI",
+        "id": "aria-required-attr",
+        "impact": "critical",
+        "nodes": [
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": [
+                            "aria-expanded"
+                        ],
+                        "id": "aria-required-attr",
+                        "impact": "critical",
+                        "message": "Required ARIA attribute not present: aria-expanded",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Required ARIA attribute not present: aria-expanded",
+                "html": "<input class=\"gLFyf gsfi\" maxlength=\"2048\" name=\"q\" type=\"text\" jsaction=\"paste:puy29d\" aria-autocomplete=\"both\" aria-haspopup=\"false\" autocapitalize=\"off\" autocomplete=\"off\" autocorrect=\"off\" autofocus=\"\" role=\"combobox\" spellcheck=\"false\" title=\"Buscar\" value=\"\" aria-label=\"Buscar\" data-ved=\"0ahUKEwiXm8iM64jnAhWTIbkGHV2ED5kQ39UDCAQ\">",
+                "impact": "critical",
+                "none": [],
+                "target": [
+                    ".gLFyf"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.aria",
+            "wcag2a",
+            "wcag412"
+        ]
+    },
+    {
+        "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+        "help": "Page must have means to bypass repeated blocks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/bypass?application=axeAPI",
+        "id": "bypass",
+        "impact": "serious",
+        "nodes": [
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "internal-link-present",
+                        "impact": "serious",
+                        "message": "No valid skip link found",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "header-present",
+                        "impact": "serious",
+                        "message": "Page does not have a header",
+                        "relatedNodes": []
+                    },
+                    {
+                        "data": null,
+                        "id": "landmark",
+                        "impact": "serious",
+                        "message": "Page does not have a landmark region",
+                        "relatedNodes": []
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  No valid skip link found\n  Page does not have a header\n  Page does not have a landmark region",
+                "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"es-419\">",
+                "impact": "serious",
+                "none": [],
+                "target": [
+                    "html"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.keyboard",
+            "wcag2a",
+            "wcag241",
+            "section508",
+            "section508.22.o"
+        ]
+    },
+    {
+        "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+        "help": "Elements must have sufficient color contrast",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/color-contrast?application=axeAPI",
+        "id": "color-contrast",
+        "impact": "serious",
+        "nodes": [
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": {
+                            "bgColor": "#f2f2f2",
+                            "contrastRatio": 4.46,
+                            "expectedContrastRatio": "4.5:1",
+                            "fgColor": "#6f6f6f",
+                            "fontSize": "11.3pt",
+                            "fontWeight": "normal",
+                            "missingData": null
+                        },
+                        "id": "color-contrast",
+                        "impact": "serious",
+                        "message": "Element has insufficient color contrast of 4.46 (foreground color: #6f6f6f, background color: #f2f2f2, font size: 11.3pt, font weight: normal). Expected contrast ratio of 4.5:1",
+                        "relatedNodes": [
+                            {
+                                "html": "<div class=\"EvHmz hRvfYe\" id=\"fbar\">",
+                                "target": [
+                                    "#fbar"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.46 (foreground color: #6f6f6f, background color: #f2f2f2, font size: 11.3pt, font weight: normal). Expected contrast ratio of 4.5:1",
+                "html": "<span class=\"Q8LRLc\">Chile</span>",
+                "impact": "serious",
+                "none": [],
+                "target": [
+                    ".Q8LRLc"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.color",
+            "wcag2aa",
+            "wcag143"
+        ]
+    },
+    {
+        "description": "Ensures the page has only one main landmark and each iframe in the page has at most one main landmark",
+        "help": "Page must have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/landmark-one-main?application=axeAPI",
+        "id": "landmark-one-main",
+        "impact": "moderate",
+        "nodes": [
+            {
+                "all": [
+                    {
+                        "data": null,
+                        "id": "page-has-main",
+                        "impact": "moderate",
+                        "message": "Page does not have a main landmark",
+                        "relatedNodes": []
+                    }
+                ],
+                "any": [],
+                "failureSummary": "Fix all of the following:\n  Page does not have a main landmark",
+                "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"es-419\">",
+                "impact": "moderate",
+                "none": [],
+                "target": [
+                    "html"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.semantics",
+            "best-practice"
+        ]
+    },
+    {
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page must contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/page-has-heading-one?application=axeAPI",
+        "id": "page-has-heading-one",
+        "impact": "moderate",
+        "nodes": [
+            {
+                "all": [
+                    {
+                        "data": null,
+                        "id": "page-has-heading-one",
+                        "impact": "moderate",
+                        "message": "Page must have a level-one heading",
+                        "relatedNodes": []
+                    }
+                ],
+                "any": [],
+                "failureSummary": "Fix all of the following:\n  Page must have a level-one heading",
+                "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"es-419\">",
+                "impact": "moderate",
+                "none": [],
+                "target": [
+                    "html"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.semantics",
+            "best-practice"
+        ]
+    },
+    {
+        "description": "Ensures all page content is contained by landmarks",
+        "help": "All page content must be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI",
+        "id": "region",
+        "impact": "moderate",
+        "nodes": [
+            {
+                "all": [],
+                "any": [
+                    {
+                        "data": null,
+                        "id": "region",
+                        "impact": "moderate",
+                        "message": "Some page content is not contained by landmarks",
+                        "relatedNodes": [
+                            {
+                                "html": "<a class=\"gb_g\" data-pid=\"23\" href=\"https://mail.google.com/mail/?tab=wm&amp;ogbl\">Gmail</a>",
+                                "target": [
+                                    "a[data-pid=\"\\32 3\"]"
+                                ]
+                            },
+                            {
+                                "html": "<a class=\"gb_g\" data-pid=\"2\" href=\"https://www.google.cl/imghp?hl=es-419&amp;tab=wi&amp;ogbl\">Im\u00e1genes</a>",
+                                "target": [
+                                    "a[data-pid=\"\\32 \"]"
+                                ]
+                            },
+                            {
+                                "html": "<a class=\"gb_ae gb_4 gb_Wc\" id=\"gb_70\" href=\"https://accounts.google.com/ServiceLogin?hl=es-419&amp;passive=true&amp;continue=https://www.google.com/\" target=\"_top\">Iniciar sesi\u00f3n</a>",
+                                "target": [
+                                    "#gb_70"
+                                ]
+                            },
+                            {
+                                "html": "<img alt=\"Google\" height=\"92\" id=\"hplogo\" src=\"/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png\" srcset=\"/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png 1x, /images/branding/googlelogo/2x/googlelogo_color_272x92dp.png 2x\" style=\"padding-top:109px\" width=\"272\" onload=\"typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)\" data-iml=\"1579202324608\" data-atf=\"1\">",
+                                "target": [
+                                    "#hplogo"
+                                ]
+                            },
+                            {
+                                "html": "<div id=\"SIvCob\">Ofrecido por Google en:  <a href=\"https://www.google.com/setprefs?sig=0_BiGNeht7dvONtPivsKSJ6H-E8T0%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwiXm8iM64jnAhWTIbkGHV2ED5kQ2ZgBCA4\">English</a>  </div>",
+                                "target": [
+                                    "#SIvCob"
+                                ]
+                            },
+                            {
+                                "html": "<span class=\"Q8LRLc\">Chile</span>",
+                                "target": [
+                                    ".Q8LRLc"
+                                ]
+                            },
+                            {
+                                "html": "<a class=\"Fx4vi\" href=\"https://policies.google.com/privacy?fg=1\" ping=\"/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/privacy%3Ffg%3D1&amp;ved=0ahUKEwiXm8iM64jnAhWTIbkGHV2ED5kQ8awCCBE\">Privacidad</a>",
+                                "target": [
+                                    "#fsr > .Fx4vi:nth-child(1)"
+                                ]
+                            },
+                            {
+                                "html": "<a class=\"Fx4vi\" href=\"https://policies.google.com/terms?fg=1\" ping=\"/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://policies.google.com/terms%3Ffg%3D1&amp;ved=0ahUKEwiXm8iM64jnAhWTIbkGHV2ED5kQ8qwCCBI\">Condiciones</a>",
+                                "target": [
+                                    "#fsr > .Fx4vi:nth-child(2)"
+                                ]
+                            },
+                            {
+                                "html": "<a class=\"Fx4vi\" href=\"https://www.google.com/preferences?hl=es-419\" id=\"fsettl\" aria-controls=\"fsett\" aria-expanded=\"false\" aria-haspopup=\"true\" role=\"button\" jsaction=\"foot.cst\" ping=\"/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/preferences%3Fhl%3Des-419&amp;ved=0ahUKEwiXm8iM64jnAhWTIbkGHV2ED5kQzq0CCBM\">",
+                                "target": [
+                                    "#fsettl"
+                                ]
+                            },
+                            {
+                                "html": "<a class=\"Fx4vi\" href=\"https://www.google.com/intl/es-419_cl/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpafooter&amp;fg=1\" ping=\"/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/intl/es-419_cl/ads/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&amp;ved=0ahUKEwiXm8iM64jnAhWTIbkGHV2ED5kQkdQCCBU\">",
+                                "target": [
+                                    "#fsl > .Fx4vi:nth-child(1)"
+                                ]
+                            },
+                            {
+                                "html": "<a class=\"Fx4vi\" href=\"https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&amp;utm_source=google.com&amp;utm_medium=referral&amp;utm_campaign=google_hpbfooter&amp;fg=1\" ping=\"/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://www.google.com/services/%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&amp;ved=0ahUKEwiXm8iM64jnAhWTIbkGHV2ED5kQktQCCBY\">",
+                                "target": [
+                                    "#fsl > .Fx4vi:nth-child(2)"
+                                ]
+                            },
+                            {
+                                "html": "<a class=\"Fx4vi\" href=\"https://about.google/?utm_source=google-CL&amp;utm_medium=referral&amp;utm_campaign=hp-footer&amp;fg=1\" ping=\"/url?sa=t&amp;rct=j&amp;source=webhp&amp;url=https://about.google/%3Futm_source%3Dgoogle-CL%26utm_medium%3Dreferral%26utm_campaign%3Dhp-footer%26fg%3D1&amp;ved=0ahUKEwiXm8iM64jnAhWTIbkGHV2ED5kQkNQCCBc\">",
+                                "target": [
+                                    ".Fx4vi:nth-child(3)"
+                                ]
+                            },
+                            {
+                                "html": "<a class=\"Fx4vi\" href=\"//google.com/search/howsearchworks/?fg=1\">  C\u00f3mo funciona la B\u00fasqueda </a>",
+                                "target": [
+                                    ".Fx4vi:nth-child(4)"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+                "html": "<html itemscope=\"\" itemtype=\"http://schema.org/WebPage\" lang=\"es-419\">",
+                "impact": "moderate",
+                "none": [],
+                "target": [
+                    "html"
+                ]
+            }
+        ],
+        "tags": [
+            "cat.keyboard",
+            "best-practice"
+        ]
+    }
+]

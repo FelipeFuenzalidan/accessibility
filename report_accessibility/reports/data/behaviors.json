@@ -1,0 +1,22 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "Google",
+    "children" : [ {
+      "name" : "Google Search",
+      "uid" : "87f8472b70fec0c9",
+      "parentUid" : "49c7071dc51c1f3a394ec4c7e27845d5",
+      "status" : "failed",
+      "time" : {
+        "start" : 1578509705633,
+        "stop" : 1578509709905,
+        "duration" : 4272
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "49c7071dc51c1f3a394ec4c7e27845d5"
+  } ]
+}

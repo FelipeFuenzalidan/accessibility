@@ -1,0 +1,117 @@
+{
+  "uid" : "29530009b26b2b00",
+  "name" : "Google Search",
+  "historyId" : "d64ed6753a2c64cbf31ab7193926b34f",
+  "time" : {
+    "start" : 1574340291552,
+    "stop" : 1574340299916,
+    "duration" : 8364
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Found 6 accessibility violations:\n\n\nRule Violated:\naria-allowed-role - Ensures role attribute has an appropriate value for the element\n\tURL: https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI\n\tImpact Level: minor\n\tTags: cat.aria best-practice\n\tElements Affected:\n\t1) Target: .gLFyf\n\t\trole combobox  is not allowed for given element\n\n\n\n\n\nRule Violated:\naria-required-attr - Ensures elements with ARIA roles have all required ARIA attributes\n\tURL: https://dequeuniversity.com/rules/axe/3.1/aria-required-attr?application=axeAPI\n\tImpact Level: critical\n\tTags: cat.aria wcag2a wcag412\n\tElements Affected:\n\t1) Target: .gLFyf\n\t\tRequired ARIA attribute not present: aria-expanded\n\n\n\n\n\nRule Violated:\nbypass - Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content\n\tURL: https://dequeuniversity.com/rules/axe/3.1/bypass?application=axeAPI\n\tImpact Level: serious\n\tTags: cat.keyboard wcag2a wcag241 section508 section508.22.o\n\tElements Affected:\n\t1) Target: html\n\t\tNo valid skip link found\n\t\tPage does not have a header\n\t\tPage does not have a landmark region\n\n\n\n\n\nRule Violated:\nlandmark-one-main - Ensures the page has only one main landmark and each iframe in the page has at most one main landmark\n\tURL: https://dequeuniversity.com/rules/axe/3.1/landmark-one-main?application=axeAPI\n\tImpact Level: moderate\n\tTags: cat.semantics best-practice\n\tElements Affected:\n\t1) Target: html\n\t\tPage does not have a main landmark\n\n\n\n\n\nRule Violated:\npage-has-heading-one - Ensure that the page, or at least one of its frames contains a level-one heading\n\tURL: https://dequeuniversity.com/rules/axe/3.1/page-has-heading-one?application=axeAPI\n\tImpact Level: moderate\n\tTags: cat.semantics best-practice\n\tElements Affected:\n\t1) Target: html\n\t\tPage must have a level-one heading\n\n\n\n\n\nRule Violated:\nregion - Ensures all page content is contained by landmarks\n\tURL: https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI\n\tImpact Level: moderate\n\tTags: cat.keyboard best-practice\n\tElements Affected:\n\t1) Target: html\n\t\tSome page content is not contained by landmarks\n\n\n\n",
+  "statusTrace" : "  File \"/Users/felipe.fuenzalida/.virtualenvs/demoAccesibilidad/lib/python3.7/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/Users/felipe.fuenzalida/.virtualenvs/demoAccesibilidad/lib/python3.7/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/demo_step.py\", line 29, in step_impl\n    assert len(context.results[\"violations\"]) == 0, context.axe.report(context.results[\"violations\"])\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Found 6 accessibility violations:\n\n\nRule Violated:\naria-allowed-role - Ensures role attribute has an appropriate value for the element\n\tURL: https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI\n\tImpact Level: minor\n\tTags: cat.aria best-practice\n\tElements Affected:\n\t1) Target: .gLFyf\n\t\trole combobox  is not allowed for given element\n\n\n\n\n\nRule Violated:\naria-required-attr - Ensures elements with ARIA roles have all required ARIA attributes\n\tURL: https://dequeuniversity.com/rules/axe/3.1/aria-required-attr?application=axeAPI\n\tImpact Level: critical\n\tTags: cat.aria wcag2a wcag412\n\tElements Affected:\n\t1) Target: .gLFyf\n\t\tRequired ARIA attribute not present: aria-expanded\n\n\n\n\n\nRule Violated:\nbypass - Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content\n\tURL: https://dequeuniversity.com/rules/axe/3.1/bypass?application=axeAPI\n\tImpact Level: serious\n\tTags: cat.keyboard wcag2a wcag241 section508 section508.22.o\n\tElements Affected:\n\t1) Target: html\n\t\tNo valid skip link found\n\t\tPage does not have a header\n\t\tPage does not have a landmark region\n\n\n\n\n\nRule Violated:\nlandmark-one-main - Ensures the page has only one main landmark and each iframe in the page has at most one main landmark\n\tURL: https://dequeuniversity.com/rules/axe/3.1/landmark-one-main?application=axeAPI\n\tImpact Level: moderate\n\tTags: cat.semantics best-practice\n\tElements Affected:\n\t1) Target: html\n\t\tPage does not have a main landmark\n\n\n\n\n\nRule Violated:\npage-has-heading-one - Ensure that the page, or at least one of its frames contains a level-one heading\n\tURL: https://dequeuniversity.com/rules/axe/3.1/page-has-heading-one?application=axeAPI\n\tImpact Level: moderate\n\tTags: cat.semantics best-practice\n\tElements Affected:\n\t1) Target: html\n\t\tPage must have a level-one heading\n\n\n\n\n\nRule Violated:\nregion - Ensures all page content is contained by landmarks\n\tURL: https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI\n\tImpact Level: moderate\n\tTags: cat.keyboard best-practice\n\tElements Affected:\n\t1) Target: html\n\t\tSome page content is not contained by landmarks\n\n\n\n",
+    "statusTrace" : "  File \"/Users/felipe.fuenzalida/.virtualenvs/demoAccesibilidad/lib/python3.7/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/Users/felipe.fuenzalida/.virtualenvs/demoAccesibilidad/lib/python3.7/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/demo_step.py\", line 29, in step_impl\n    assert len(context.results[\"violations\"]) == 0, context.axe.report(context.results[\"violations\"])\n",
+    "steps" : [ {
+      "name" : "Given I am on google search page",
+      "time" : {
+        "start" : 1574340291552,
+        "stop" : 1574340299446,
+        "duration" : 7894
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When I inject axe-core javascript into page",
+      "time" : {
+        "start" : 1574340299446,
+        "stop" : 1574340299500,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And I run axe accessibility checks",
+      "time" : {
+        "start" : 1574340299501,
+        "stop" : 1574340299773,
+        "duration" : 272
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then I write results to file",
+      "time" : {
+        "start" : 1574340299773,
+        "stop" : 1574340299915,
+        "duration" : 142
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: Found 6 accessibility violations:\n\n\nRule Violated:\naria-allowed-role - Ensures role attribute has an appropriate value for the element\n\tURL: https://dequeuniversity.com/rules/axe/3.1/aria-allowed-role?application=axeAPI\n\tImpact Level: minor\n\tTags: cat.aria best-practice\n\tElements Affected:\n\t1) Target: .gLFyf\n\t\trole combobox  is not allowed for given element\n\n\n\n\n\nRule Violated:\naria-required-attr - Ensures elements with ARIA roles have all required ARIA attributes\n\tURL: https://dequeuniversity.com/rules/axe/3.1/aria-required-attr?application=axeAPI\n\tImpact Level: critical\n\tTags: cat.aria wcag2a wcag412\n\tElements Affected:\n\t1) Target: .gLFyf\n\t\tRequired ARIA attribute not present: aria-expanded\n\n\n\n\n\nRule Violated:\nbypass - Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content\n\tURL: https://dequeuniversity.com/rules/axe/3.1/bypass?application=axeAPI\n\tImpact Level: serious\n\tTags: cat.keyboard wcag2a wcag241 section508 section508.22.o\n\tElements Affected:\n\t1) Target: html\n\t\tNo valid skip link found\n\t\tPage does not have a header\n\t\tPage does not have a landmark region\n\n\n\n\n\nRule Violated:\nlandmark-one-main - Ensures the page has only one main landmark and each iframe in the page has at most one main landmark\n\tURL: https://dequeuniversity.com/rules/axe/3.1/landmark-one-main?application=axeAPI\n\tImpact Level: moderate\n\tTags: cat.semantics best-practice\n\tElements Affected:\n\t1) Target: html\n\t\tPage does not have a main landmark\n\n\n\n\n\nRule Violated:\npage-has-heading-one - Ensure that the page, or at least one of its frames contains a level-one heading\n\tURL: https://dequeuniversity.com/rules/axe/3.1/page-has-heading-one?application=axeAPI\n\tImpact Level: moderate\n\tTags: cat.semantics best-practice\n\tElements Affected:\n\t1) Target: html\n\t\tPage must have a level-one heading\n\n\n\n\n\nRule Violated:\nregion - Ensures all page content is contained by landmarks\n\tURL: https://dequeuniversity.com/rules/axe/3.1/region?application=axeAPI\n\tImpact Level: moderate\n\tTags: cat.keyboard best-practice\n\tElements Affected:\n\t1) Target: html\n\t\tSome page content is not contained by landmarks\n\n\n\n",
+      "statusTrace" : "  File \"/Users/felipe.fuenzalida/.virtualenvs/demoAccesibilidad/lib/python3.7/site-packages/behave/model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"/Users/felipe.fuenzalida/.virtualenvs/demoAccesibilidad/lib/python3.7/site-packages/behave/matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features/steps/demo_step.py\", line 29, in step_impl\n    assert len(context.results[\"violations\"]) == 0, context.axe.report(context.results[\"violations\"])\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Google"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "29530009b26b2b00.json",
+  "parameterValues" : [ ]
+}
